@@ -1,30 +1,19 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="flex justify-between h-screen bg-[#f2f5f8] overflow-y-auto overflow-x-hidden">
+    <div class="pt-[129px] pl-[63px] pr-[63px] border-r-1 border-[#bfbfbf]">
+      <div class="w-[403px] h-[703px] bg-white rounded-[30px] flex flex-col items-center pt-[56px]">
+        <img class="border-4 border-[#cfcfcf] rounded-[50%] w-[145px] h-[145px]" src="./assets/dog.jpg" />
+        <div class="text-base font-bold text-black pt-[23px]">努力挣钱的小鑫</div>
+        <div class="text-sm text-[#00bc91] pt-[15px]">前端工程师</div>
+        <div class="w-[339px] h-[1px] bg-[#eeeeee] my-[36px]"></div>
+      </div>
+    </div>
+    <div class="flex-1"></div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<style scoped></style>
